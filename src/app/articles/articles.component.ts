@@ -52,4 +52,11 @@ export class ArticlesComponent implements OnInit {
     });
   }
 
+  searchKeyword(e: Event) {
+    const keyword = (<HTMLInputElement>e.target).value;    
+    this.articleService.searchArticle(keyword).subscribe(value => {
+      this.articles = value;
+    });
+  }
+
 }

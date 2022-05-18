@@ -30,11 +30,17 @@ export class ArticleComponent implements OnInit {
   @Output()
   deletedArticle : EventEmitter<Article> = new EventEmitter();
 
+  constructor(private route: Router ) { }
+
   ngOnInit(): void {
   }
 
   delete(){
     this.deletedArticle.emit(this.article);
+  }
+
+  details(){
+    this.route.navigate(['/article', this.article.id]);
   }
 
 }

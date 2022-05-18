@@ -33,10 +33,12 @@ import { ArticleService } from './article.service';
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
+  { path: 'article/:id', component: ArticleDetailComponent },
   { path: '', component: ArticlesComponent }
 ]
 @NgModule({
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    ArticleDetailComponent
   ],
   imports: [
     RouterModule.forRoot(
