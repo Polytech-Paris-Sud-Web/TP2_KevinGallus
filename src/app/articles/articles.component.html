@@ -1,0 +1,29 @@
+<!-- <ul>
+    <li *ngFor="let article of article">
+      <app-article [title]="article.title" [content]="article.content" [author]="article.author"></app-article>
+    </li>
+</ul> -->
+<!-- <ul>
+  <li *ngFor="let article of this.articles()">
+    <app-article [title]="article.title" [content]="article.content" [author]="article.author"></app-article>
+  </li>
+</ul> -->
+<div class="overflow-y-auto h-full flex flex-col space-y-4 self-center pr-4">
+  <!-- <div class="fixed">
+      <input 
+          (input)="searchKeyword($event)"
+          (ngModelChange)="searchKeyword"
+          type="text" 
+          class="form-input px-4 py-3 rounded-full w-[400px]" 
+          placeholder="Recherche d'article"
+          
+      >
+  </div> -->
+  <app-article 
+      *ngFor="let article of articles" 
+      [article]="article"
+      (deletedArticle)="delete($event)"
+      class="!mt-14"
+  >
+  </app-article>
+</div>
