@@ -1,8 +1,12 @@
 <!-- <p>article works!</p> -->
-<div>
-    <h3> {{this.article.title}} </h3>
-    <p> {{this.article.content}} </p>
-    <p> {{this.article.author}} </p>
-    <button (click)="details()">Details</button>
-    <button class="btn btn-danger" (click)="delete()">Delete</button>
+<div class="card" style="margin: 5px; max-width: 600px;">
+    <div class="card-body">
+        <h3> {{this.article.title}} </h3>
+        <p> {{this.article.content}} </p>
+        <p> {{this.article.author}} </p>
+        <div class="col12" >
+            <button class="btn btn-info rounded-0" style="margin-right: 10px;" (click)="details()">Details</button>
+            <button class="btn btn-danger rounded-0"  (click)="delete()">Delete</button>
+        </div>
+    </div>
 </div>

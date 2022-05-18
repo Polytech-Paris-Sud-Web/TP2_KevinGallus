@@ -9,8 +9,11 @@
   </li>
 </ul> -->
 <div class="overflow-y-auto h-full flex flex-col space-y-4 self-center pr-4">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1" style="margin-left: 5px;">?</span>
+    <input type="text" class="form-control" (ngModelChange)="searchKeyword" (input)="searchKeyword($event)" placeholder="Search articles" style="max-width: 200px;">
+  </div>
   <div>
-      <input (ngModelChange)="searchKeyword" (input)="searchKeyword($event)" type="text" placeholder="Search articles">
   </div>
   <app-article 
       *ngFor="let article of articles" 

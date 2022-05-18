@@ -30,6 +30,10 @@ export class ArticleService {
   public deleteArticle(id: number): Observable<Article> {
     return this.http.delete<Article>(`http://localhost:3000/articles/${id}`);
   }
+
+  public getTenLastArticle(): Observable<Article[]> {
+    return this.http.get<Article[]>(`http://localhost:3000/articles?_limit=10`);
+  }
   
   // public getArticles() : Article[] {
   //   return [{
