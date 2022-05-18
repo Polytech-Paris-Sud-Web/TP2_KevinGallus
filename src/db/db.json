@@ -1,70 +1,39 @@
 {
   "articles": [
     {
-      "title": "ff",
-      "content": "fff",
-      "author": "fffff",
+      "title": "Test ",
+      "content": "je suis trop content ",
+      "author": "Keke Gallus",
+      "id": 12
+    },
+    {
+      "title": "Oui",
+      "content": "Je dis oui",
+      "author": "Kevin De Gallus",
+      "id": 13
+    },
+    {
+      "title": "Un autre nanar",
+      "content": "Lisez pas c'est vraiment nul",
+      "author": "Claire Bauchu",
+      "id": 14
+    }
+  ],
+  "authors": [
+    {
+      "name": "Keke Gallus",
+      "biographie": "Un bon gros débile",
       "id": 1
     },
     {
-      "title": "Fake Title",
-      "content": "c",
-      "author": "b",
+      "name": "Kevin De Gallus",
+      "biographie": "Auteur de la vie et essayiste émérite",
       "id": 2
     },
     {
-      "title": "Fake Title",
-      "content": "ff",
-      "author": "fffffffff",
+      "name": "Claire Bauchu",
+      "biographie": "Affreuse autrice de bouquin pas foufou (imagine t'as fait L et t'es en info)",
       "id": 3
-    },
-    {
-      "title": "Fake Title",
-      "content": "d",
-      "author": "tgt",
-      "id": 4
-    },
-    {
-      "title": "Fake Title",
-      "content": "frre",
-      "author": "reerger",
-      "id": 5
-    },
-    {
-      "title": "Fake Title",
-      "content": "rger",
-      "author": "trttrz",
-      "id": 6
-    },
-    {
-      "title": "Fake Title",
-      "content": "rrza",
-      "author": "gffgd",
-      "id": 7
-    },
-    {
-      "title": "Fake Title",
-      "content": "zzzzzzzzzz",
-      "author": "aaaaaaaaaaaaaaaaaa",
-      "id": 8
-    },
-    {
-      "title": "Fake Title",
-      "content": "pppppzefmzf",
-      "author": "re,,,,,,,ms",
-      "id": 9
-    },
-    {
-      "title": "Fake Title",
-      "content": "eaaaaaaaaaa",
-      "author": "pziefnoino",
-      "id": 10
-    },
-    {
-      "title": "Fake Title",
-      "content": "npazonpodnpo",
-      "author": "ponllk",
-      "id": 11
     }
   ]
 }

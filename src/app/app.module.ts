@@ -35,12 +35,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { LastArticlesComponent } from './last-articles/last-articles.component';
+import { AuthorComponent } from './author/author.component';
 
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
   { path: 'article/:id', component: ArticleDetailComponent },
   { path: 'lastarticle', component: LastArticlesComponent},
+  { path: 'author/:name', component: AuthorComponent },
   { path: '', component: ArticlesComponent }
 ]
 @NgModule({
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     ArticlesComponent,
     ArticleCreationComponent,
     ArticleDetailComponent,
-    LastArticlesComponent
+    LastArticlesComponent,
+    AuthorComponent
   ],
   imports: [
     RouterModule.forRoot(

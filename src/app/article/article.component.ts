@@ -43,5 +43,9 @@ export class ArticleComponent implements OnInit {
     this.route.navigate(['/article', this.article.id]);
   }
 
+  detailsAuteur(){
+    this.route.navigate(['/author', this.article.author]);
+  }
+
 }
 

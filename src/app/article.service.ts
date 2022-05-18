@@ -32,7 +32,7 @@ export class ArticleService {
   }
 
   public getTenLastArticle(): Observable<Article[]> {
-    return this.http.get<Article[]>(`http://localhost:3000/articles?_limit=10`);
+    return this.http.get<Article[]>(`http://localhost:3000/articles?_page=1`);
   }
   
   // public getArticles() : Article[] {
