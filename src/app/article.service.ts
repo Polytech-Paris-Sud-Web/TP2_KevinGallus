@@ -54,7 +54,7 @@ export class ArticleService {
   }
 
   public getTenLastArticle(): Observable<Article[]> {
-    return this.preloadArticles ? of(this.preloadArticles) : this.http.get<Article[]>(`${environment.apiUrl}/articles?_page=1`);
+    return this.preloadArticles ? of(this.preloadArticles) : this.http.get<Article[]>(`${environment.apiUrl}/articles?_sort=id&_order=desc`);
   }  
 
 }
