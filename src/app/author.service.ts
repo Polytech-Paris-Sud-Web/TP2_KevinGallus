@@ -13,10 +13,6 @@ export class AuthorService {
 
   constructor(private http : HttpClient) { }
 
-  // public getAuthor(name: string): Observable<Author[]> {
-  //   return this.http.get<Author[]>(`http://localhost:3000/authors?name=${name}`);
-  // }
-
   public preloadAuthors$(): Observable<Author[]> {
     if (!this.preloadAuthors) {
       return this.http.get<Author[]>(`${environment.apiUrl}/authors`).pipe(

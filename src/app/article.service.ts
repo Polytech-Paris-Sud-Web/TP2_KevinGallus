@@ -55,21 +55,6 @@ export class ArticleService {
 
   public getTenLastArticle(): Observable<Article[]> {
     return this.preloadArticles ? of(this.preloadArticles) : this.http.get<Article[]>(`${environment.apiUrl}/articles?_page=1`);
-  }
-  
-  // public getArticles() : Article[] {
-  //   return [{
-  //     title: 'My First Article',
-  //     content: 'Hello World',
-  //     author: 'Orangefire'
-  //   }, {
-  //     title: 'Angular component',
-  //     content: 'Angular component looks awesome!',
-  //     author: 'Orangefire'
-  //   }, {
-  //     title: 'Angular service',
-  //     content: 'I read something about angular service, i will try it soon',
-  //     author: 'Orangefire'
-  //   }];
-  // } 
+  }  
+
 }
